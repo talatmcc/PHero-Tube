@@ -1,0 +1,53 @@
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-box {
+    height: 200px;
+    width: 300px;
+}
+
+.author-profile {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.video-info {
+    text-align: left;
+}
+
+.profile-verified {
+    display: flex;
+}
+
+.show-error {
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.date-ago {
+    margin-top: -25px;
+    color: rgb(8, 8, 1);
+}
+
+.btn.active {
+    background-color: red;
+    color: white;
+}

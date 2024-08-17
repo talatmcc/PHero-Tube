@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>PHero-Tube</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- Logo -->
+            <a href="index.html">
+                <img class="m-3 m-md-5 h-20px w-auto" src="resources/Logo.png" alt="logo">
+            </a>
+            <!-- Buttons -->
+            <button onclick="displaySortedData(); setActiveButton('sorting-button');" id="sorting-button" class="btn btn-secondary">Sort By View</button>
+            <button onclick="setActiveButton('Blog');" id="Blog" class="btn btn-info blog px-5 my-3">
+                <a class="text-white text-decoration-none" target="_blank" href="blog-page.html">Blog</a>
+            </button>
+        </div>
+
+        <hr class="bg-dark m-auto w-auto">
+
+        <!-- Category Selection -->
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center m-auto w-auto">
+            <button onclick="loadData(1000); setActiveButton('all');" id="all" class="btn btn-danger px-5 m-2 m-md-5 active">ALL</button>
+            <button onclick="loadData(1001); setActiveButton('music');" id="music" class="btn btn-secondary px-5 m-2 m-md-5">Music</button>
+            <button onclick="loadData(1003); setActiveButton('comedy');" id="comedy" class="btn btn-secondary px-5 m-2 m-md-5">Comedy</button>
+            <button onclick="loadData(1005); setActiveButton('drawing');" id="drawing" class="btn btn-secondary px-5 m-2 m-md-5">Drawing</button>
+        </div>
+
+        <!-- Video Display Area -->
+        <div id="video-container"></div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
